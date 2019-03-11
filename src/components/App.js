@@ -17,9 +17,9 @@ class App extends Component {
                     </ul>
 
                     <div className="content">
-                        <Route exact path="/" component={Home} />
-                        <Route path="/summoner" component={Summoner} />
-                        <Route path="/matches" component={Matches} />
+                        <Route exact path="/LeagueStats" component={Home} />
+                        <Route path="LeagueStats/summoner" component={Summoner} />
+                        <Route path="LeagueStats/matches" component={Matches} />
                     </div>
                 </div>
             </HashRouter>
