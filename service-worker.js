@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/leaguestats/precache-manifest.59c17791eac8ab17f69bacc10a11b2ec.js"
+  "/LeagueStats/precache-manifest.958d75a4cbe5fc73cc06771e98e7f14a.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/leaguestats/index.html", {
+workbox.routing.registerNavigationRoute("/LeagueStats/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
