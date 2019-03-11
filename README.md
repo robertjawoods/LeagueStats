@@ -1,6 +1,10 @@
 # LeagueStats
 ## A small project to display League of Legends API data using Javascript with React 
 
+### Installation Notes
+
+You'll need to have [Node.js](https://nodejs.org/en/) installed, this will also install npm. Once installed, cd to the repo directory and run `npm install`. This will install all prerequisite dependencies and allow the use of the commands detailed below.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

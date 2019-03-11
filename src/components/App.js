@@ -7,7 +7,7 @@ import Summoner from "./Summoner";
 class App extends Component {
     render() {
         return (
-            <HashRouter>
+            <HashRouter basename={process.env.PUBLIC_URL}>
                 <div>
                     <h1>League Stats</h1>
                     <ul className="navigation-bar">
