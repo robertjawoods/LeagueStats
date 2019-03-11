@@ -1,13 +1,13 @@
 {
   "main.css": "/leaguestats/static/css/main.b4b2ef93.chunk.css",
-  "main.js": "/leaguestats/static/js/main.a4991c09.chunk.js",
-  "main.js.map": "/leaguestats/static/js/main.a4991c09.chunk.js.map",
+  "main.js": "/leaguestats/static/js/main.a2efbe82.chunk.js",
+  "main.js.map": "/leaguestats/static/js/main.a2efbe82.chunk.js.map",
   "runtime~main.js": "/leaguestats/static/js/runtime~main.e431626b.js",
   "runtime~main.js.map": "/leaguestats/static/js/runtime~main.e431626b.js.map",
   "static/js/2.098369f2.chunk.js": "/leaguestats/static/js/2.098369f2.chunk.js",
   "static/js/2.098369f2.chunk.js.map": "/leaguestats/static/js/2.098369f2.chunk.js.map",
   "index.html": "/leaguestats/index.html",
-  "precache-manifest.a6eff65d3fdcb2a16b23af0601601767.js": "/leaguestats/precache-manifest.a6eff65d3fdcb2a16b23af0601601767.js",
+  "precache-manifest.b6da319c1d261e608eb0216e38f69290.js": "/leaguestats/precache-manifest.b6da319c1d261e608eb0216e38f69290.js",
   "service-worker.js": "/leaguestats/service-worker.js",
   "static/css/main.b4b2ef93.chunk.css.map": "/leaguestats/static/css/main.b4b2ef93.chunk.css.map"
 }
