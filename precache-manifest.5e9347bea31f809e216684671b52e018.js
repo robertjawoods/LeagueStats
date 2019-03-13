@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/LeagueStats/static/js/runtime~main.ac39bfea.js"
   },
   {
-    "revision": "09cc13ac96778b9f9271",
-    "url": "/LeagueStats/static/js/main.5c320b87.chunk.js"
+    "revision": "0e2c3c8b1d1629782249",
+    "url": "/LeagueStats/static/js/main.033da3c2.chunk.js"
   },
   {
     "revision": "9a6dc2a3bc3a68dc4359",
     "url": "/LeagueStats/static/js/2.b715aee0.chunk.js"
   },
   {
-    "revision": "09cc13ac96778b9f9271",
+    "revision": "0e2c3c8b1d1629782249",
     "url": "/LeagueStats/static/css/main.b4b2ef93.chunk.css"
   },
   {
-    "revision": "ed4762a981a324eccfbb17d686e19065",
+    "revision": "a96e0bb8f298d27fedb7ed3e5d072dd8",
     "url": "/LeagueStats/index.html"
   }
 ];
