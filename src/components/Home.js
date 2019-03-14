@@ -1,17 +1,41 @@
 import React, { Component } from "react";
 import Search from "./Search";
+import Summoner from "./Summoner";
 
-class SearchSummoner extends Component {
+class Home extends Component {
+    state = {
+        summoner: [],
+        status: ""
+    }
 
+    constructor(props) {
+        super(props);
+
+        this.setResponse = this.setResponse.bind(this);
+    }
+
+    setResponse(response) {
+        this.setState({
+            summoner: response.data,
+            status: response.status
+        });
+        
+        if (this.state.status === 200) {
+            this.props.onValidSummoner(this.state.summoner);
+        }
+    }
 
     render() {
         return (
             <div>
-                <h2>Search Summoner</h2>
-                <Search />
+                <Search onSummonerChange={this.setResponse} />
+                { 
+                    this.state.status === 200 &&
+                    <Summoner summoner={this.state.summoner} />
+                }
             </div>
         );
     }
 }
 
-export default SearchSummoner;
+export default Home;

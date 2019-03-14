@@ -1,36 +1,44 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
+import axios from "axios";
 import { API_URL } from "./constants.js";
 
-class Search extends Component { 
-    state = {
-        summoner: "",
+class Search extends Component {
+    constructor(props) {
+        super(props);
+
+        this.onSearchSubmit = this.onSearchSubmit.bind(this);
     }
 
     onSearchSubmit = (e) => {
         e.preventDefault();
 
-       fetch(API_URL + "summoner/GetSummonerByAccountName/" + this.search.value)
-       .then((result) => {
-                this.setState({
-                    summoner: JSON.stringify(result)
-                });
-            })
-        .catch();
+        axios.get(API_URL + "summoner/getsummonerbyaccountname/" + this.search.value)
+            .then((result) => {
+   
+
+                this.props.onSummonerChange(result);
+            });
+        // Why is this always catching??
+        // .catch((error) => {
+        //     if (error.response.status === 404) {
+        //         this.setState({
+        //             message: `Unable to find summoner '${this.search.value}'`,
+        //             status: error.response.status,
+        //             summoner: error.data
+        //         });
+        //     }
+        // });
     }
 
-    render ()
-    {
+    render() {
         return (
-            <form onSubmit={(e) => this.onSearchSubmit(e)}>
-                <input placeholder="Summoner Name" 
-                ref={input => this.search = input}/>
-                <input type="submit" style={{display: "none"}}/>
-
-                <p>{this.state.summoner}</p>
-            </form>
+            <div>
+                <form onSubmit={(e) => this.onSearchSubmit(e)}>
+                    <input placeholder="Summoner Name" ref={input => this.search = input} />
+                </form>
+            </div>
         );
-    }  
-    
+    }
 }
 
 export default Search; 
