@@ -1,13 +1,13 @@
 {
   "main.css": "/LeagueStats/static/css/main.b4b2ef93.chunk.css",
-  "main.js": "/LeagueStats/static/js/main.033da3c2.chunk.js",
-  "main.js.map": "/LeagueStats/static/js/main.033da3c2.chunk.js.map",
+  "main.js": "/LeagueStats/static/js/main.66c58ef6.chunk.js",
+  "main.js.map": "/LeagueStats/static/js/main.66c58ef6.chunk.js.map",
   "runtime~main.js": "/LeagueStats/static/js/runtime~main.ac39bfea.js",
   "runtime~main.js.map": "/LeagueStats/static/js/runtime~main.ac39bfea.js.map",
-  "static/js/2.b715aee0.chunk.js": "/LeagueStats/static/js/2.b715aee0.chunk.js",
-  "static/js/2.b715aee0.chunk.js.map": "/LeagueStats/static/js/2.b715aee0.chunk.js.map",
+  "static/js/2.0c255667.chunk.js": "/LeagueStats/static/js/2.0c255667.chunk.js",
+  "static/js/2.0c255667.chunk.js.map": "/LeagueStats/static/js/2.0c255667.chunk.js.map",
   "index.html": "/LeagueStats/index.html",
-  "precache-manifest.5e9347bea31f809e216684671b52e018.js": "/LeagueStats/precache-manifest.5e9347bea31f809e216684671b52e018.js",
+  "precache-manifest.fe79f14eda93c08a98956c88e5cf2c23.js": "/LeagueStats/precache-manifest.fe79f14eda93c08a98956c88e5cf2c23.js",
   "service-worker.js": "/LeagueStats/service-worker.js",
   "static/css/main.b4b2ef93.chunk.css.map": "/LeagueStats/static/css/main.b4b2ef93.chunk.css.map"
 }
