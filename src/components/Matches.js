@@ -1,6 +1,25 @@
 import React, { Component } from "react";
+import axios from "axios";
+import { API_URL } from "./constants";
 
 class Matches extends Component {
+    state = {
+        matchData: []
+    }
+
+    componentDidMount() {
+        if (this.props.encryptedAccountId) {
+            axios.get(API_URL + `match/getmatchesbyaccount/${this.props.encryptedAccountId}`)
+            .then((response) => {
+                console.log(response.data);
+
+                this.setState({
+                    matchList: response.data
+                })
+            });
+        }
+    }
+
     render() {
         return (
             <div>

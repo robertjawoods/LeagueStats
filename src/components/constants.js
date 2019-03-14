@@ -1,0 +1,1 @@
+export const API_URL = "https://league-stats-backend.herokuapp.com/";
