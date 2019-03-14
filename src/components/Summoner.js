@@ -8,7 +8,7 @@ class Summoner extends Component {
                     <p>{this.props.summoner.name}</p>
 
                     <h2>Summoner Level</h2>
-                    <p>{this.props.summoner.level}</p>
+                    <p>{this.props.summoner.summonerLevel}</p>
                 </div>
             );
     }
