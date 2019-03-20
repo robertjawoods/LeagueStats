@@ -12,10 +12,10 @@ class Search extends Component {
     onSearchSubmit = (e) => {
         e.preventDefault();
 
-        axios.get(API_URL + "summoner/getsummonerbyaccountname/" + this.search.value)
-            .then((result) => {
-   
+        console.log(API_URL);
 
+        axios.get(API_URL + "api/summoner/byname/" + this.search.value)
+            .then((result) => {
                 this.props.onSummonerChange(result);
             });
         // Why is this always catching??

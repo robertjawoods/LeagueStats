@@ -9,7 +9,7 @@ class Matches extends Component {
 
     componentDidMount() {
         if (this.props.encryptedAccountId) {
-            axios.get(API_URL + `match/getmatchesbyaccount/${this.props.encryptedAccountId}`)
+            axios.get(API_URL + `api/match/matchlist/${this.props.encryptedAccountId}`)
             .then((response) => {
                 console.log(response.data);
 
