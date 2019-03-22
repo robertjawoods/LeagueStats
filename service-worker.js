@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/LeagueStats/precache-manifest.dc6352f47eb6c99b56ce8eb5a0f30068.js"
+  "/LeagueStats/precache-manifest.12c80fc23f8b84fb5f7790f03231855e.js"
 );
 
 workbox.clientsClaim();
