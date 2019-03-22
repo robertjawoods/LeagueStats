@@ -1,8 +1,13 @@
 import React, { Component } from "react";
+import axios from "axios";
+import { API_URL } from "./constants";
 
 class Matches extends Component {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> master
     state = {
         matchData: []
     }
@@ -14,13 +19,20 @@ class Matches extends Component {
                 console.log(response.data);
 
                 this.setState({
+<<<<<<< HEAD
                     matchData: response.data
+=======
+                    matchList: response.data
+>>>>>>> master
                 })
             });
         }
     }
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+>>>>>>> master
     render() {
         return (
             <div>
