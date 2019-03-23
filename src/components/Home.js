@@ -14,6 +14,12 @@ class Home extends Component {
         this.setResponse = this.setResponse.bind(this);
     }
 
+    componentDidMount() {
+        this.setState({
+            summoner: this.props.selectedSummoner
+        });
+    }
+
     setResponse(response) {
         this.setState({
             summoner: response.data,
@@ -29,10 +35,8 @@ class Home extends Component {
         return (
             <div>
                 <Search onSummonerChange={this.setResponse} />
-                { 
-                    this.state.status === 200 &&
-                    <Summoner summoner={this.state.summoner} />
-                }
+                <Summoner summoner={this.state.summoner} />
+                
             </div>
         );
     }
