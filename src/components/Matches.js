@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { API_URL } from "../data/constants";
 import MatchList from "./MatchList";
+import MatchDetails from "./MatchDetails";
 
 class Matches extends Component {
 
@@ -12,11 +13,12 @@ class Matches extends Component {
     }
 
     state = {
-        matchData: []
+        matchListData: [],
+        selectedMatchId: ""
     }
 
     onMatchView(e) {
-        console.log(e);
+        this.setState({selectedMatchId: e});
     }
 
     componentDidMount() {
@@ -26,7 +28,7 @@ class Matches extends Component {
                 console.log(response.data);
 
                 this.setState({
-                    matchData: response.data
+                    matchListData: response.data
                 });
             });
         }
@@ -35,7 +37,7 @@ class Matches extends Component {
     render() {
         return (
             <div>
-                <MatchList list={this.state.matchData.matches} onMatchView={this.onMatchView}/>
+                <MatchList list={this.state.matchListData.matches} onMatchView={this.onMatchView}/>
             </div>
         );
     }

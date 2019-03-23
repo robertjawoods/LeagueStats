@@ -4,25 +4,6 @@ body {
     margin: 0;
   }
 
-  scroll-container {
-    display: block;
-    width: 350px;
-    height: 200px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-  }
-  scroll-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    font-size: 5em;
-  }
-  
-  .content .searchBar {
-     
-  }
-
   h1{
     color:#fff;
 
@@ -222,6 +203,27 @@ body {
       }
   }
 
+  #scrollArea {
+    overflow-y: scroll;
+    height: 600px;
+    width: 22%;
+  }
+
+  #scrollArea ul {
+    list-style: none;
+  }
+
+  #scrollArea ul>li .championImage {
+    float: left;
+  }
+
+  #scrollArea ul>li .matchDetails,  #scrollArea ul>li .selectMatchButton {
+    float: right;
+  }
+
+  .content .searchBar {
+    text-align: center;
+  }
 
   
   

@@ -18,16 +18,6 @@ class Search extends Component {
             .then((result) => {
                 this.props.onSummonerChange(result);
             });
-        // Why is this always catching??
-        // .catch((error) => {
-        //     if (error.response.status === 404) {
-        //         this.setState({
-        //             message: `Unable to find summoner '${this.search.value}'`,
-        //             status: error.response.status,
-        //             summoner: error.data
-        //         });
-        //     }
-        // });
     }
 
     render() {

@@ -11,23 +11,17 @@ class MatchList extends Component {
     };
 
 
-    componentDidMount() {
-        var x = _.indexBy(champions.data, "key");
+    componentDidMount () {
+        var x =_.indexBy(champions.data, "key");
 
-        this.setState({ championMap: x });
+        this.setState({championMap: x});
     }
 
     render() {
         if (this.props.list) {
             return (
-                <div>
-                    <scroll-container>
-                        {_.map(this.props.list, (match) =>
-                            <scroll-page id={match.gameId}>
-                                <MatchListElement match={match} champion={this.state.championMap[match.champion]} key={match.gameId} onMatchView={this.props.onMatchView} />
-                            </scroll-page>
-                        )}
-                    </scroll-container>
+                <div id="scrollArea">
+                    <ul className="matchDetailsPane">{_.map(this.props.list, (match) => <MatchListElement match={match} champion={this.state.championMap[match.champion]} key={match.gameId} onMatchView={this.props.onMatchView} />)}</ul>
                 </div>
             );
         }

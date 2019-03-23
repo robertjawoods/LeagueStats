@@ -24,6 +24,7 @@ class App extends Component {
 
             <div className="content">
                 <Home onValidSummoner={this.onSummonerSelected} selectedSummoner={this.state.summoner} />
+                
                 {this.state.summoner.accountId &&
                     <Matches encryptedAccountId={this.state.summoner.accountId} />
                 }
