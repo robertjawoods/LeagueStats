@@ -5,7 +5,7 @@ import Matches from "./Matches";
 
 class App extends Component {
     state = {
-        encryptedAccountId: ""
+        summoner: []
     }
 
     constructor(props){
@@ -16,7 +16,7 @@ class App extends Component {
 
     onSummonerSelected(summoner) {
         this.setState({
-            encryptedAccountId: summoner.accountId
+            summoner: summoner
         });
     }
 
@@ -31,12 +31,12 @@ class App extends Component {
                     </ul>
 
                     <div className="content">
-                        <Route exact path="/" render={ 
-                            (props) => <Home onValidSummoner={this.onSummonerSelected}/>
-                        }/>
+
+                        <Route exact path="/" render= { (props) =>  <Home onValidSummoner={this.onSummonerSelected} selectedSummoner={this.state.summoner}/> }/>
                         <Route path="/matches" render={
-                            (props) =>  <Matches encryptedAccountId={this.state.encryptedAccountId}/>
+                            (props) =>  <Matches encryptedAccountId={this.state.summoner.accountId}/>
                         }/>
+
                     </div>
                 </div>
             </HashRouter>
