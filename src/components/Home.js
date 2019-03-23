@@ -36,7 +36,6 @@ class Home extends Component {
             <div>
                 <Search onSummonerChange={this.setResponse} />
                 <Summoner summoner={this.state.summoner} />
-                
             </div>
         );
     }
