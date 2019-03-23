@@ -5,8 +5,7 @@ import Matches from "./Matches";
 
 class App extends Component {
     state = {
-        summoner: []
-    }
+        summoner: {}    }
 
     constructor(props){
         super(props);

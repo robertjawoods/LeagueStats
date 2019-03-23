@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-import { API_URL } from "./constants";
+import { API_URL } from "../data/constants";
 import MatchList from "./MatchList";
 
 class Matches extends Component {
