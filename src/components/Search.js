@@ -33,7 +33,7 @@ class Search extends Component {
     render() {
         return (
             <div>
-                <form onSubmit={(e) => this.onSearchSubmit(e)}>
+                <form  className="searchBar" onSubmit={(e) => this.onSearchSubmit(e)}>
                     <input placeholder="Summoner Name" ref={input => this.search = input} />
                 </form>
             </div>

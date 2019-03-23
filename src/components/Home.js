@@ -25,7 +25,7 @@ class Home extends Component {
             summoner: response.data,
             status: response.status
         });
-        
+
         if (this.state.status === 200) {
             this.props.onValidSummoner(this.state.summoner);
         }
@@ -34,7 +34,10 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Search onSummonerChange={this.setResponse} />
+                <div className="searchBar">
+                    <Search  onSummonerChange={this.setResponse} />
+                </div>
+
                 <Summoner summoner={this.state.summoner} />
             </div>
         );
