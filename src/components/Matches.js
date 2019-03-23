@@ -17,7 +17,7 @@ class Matches extends Component {
 
                 this.setState({
                     matchData: response.data
-                })
+                });
             });
         }
     }
