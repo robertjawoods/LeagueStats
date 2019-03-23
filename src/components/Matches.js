@@ -5,6 +5,12 @@ import MatchList from "./MatchList";
 
 class Matches extends Component {
 
+    constructor (props) {
+        super(props);        
+
+        this.onMatchView = this.onMatchView.bind(this);
+    }
+
     state = {
         matchData: []
     }
