@@ -8,7 +8,7 @@ class MatchList extends Component {
         if (this.props.list) {
             return (
                 <div>
-                    <ul>{_.map(this.props.list, (match) => <MatchListElement match={match} key={match.gameId} />)}</ul>
+                    <ul>{_.map(this.props.list, (match) => <MatchListElement match={match} key={match.gameId} onMatchView={this.props.onMatchView} />)}</ul>
                 </div>
             );
         }

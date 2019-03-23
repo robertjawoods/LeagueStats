@@ -9,6 +9,10 @@ class Matches extends Component {
         matchData: []
     }
 
+    onMatchView(e) {
+        console.log(e);
+    }
+
     componentDidMount() {
         if (this.props.encryptedAccountId) {
             axios.get(API_URL + `api/match/matchlist/${this.props.encryptedAccountId}`)
@@ -25,7 +29,7 @@ class Matches extends Component {
     render() {
         return (
             <div>
-                <MatchList list={this.state.matchData.matches} />
+                <MatchList list={this.state.matchData.matches} onMatchView={this.onMatchView}/>
             </div>
         );
     }

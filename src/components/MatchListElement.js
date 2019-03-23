@@ -12,10 +12,6 @@ class MatchListElement extends Component {
         };      
     }
 
-    onMatchView(e) {
-        e.preventDefault();
-    }
-
     render() {
         if (this.state.champion)
             return (
@@ -26,7 +22,7 @@ class MatchListElement extends Component {
                     <p>Match Type: {this.props.match.queue}</p>
                     <p>Date: {new Date(this.props.match.timestamp).toLocaleString()}</p>
                     <img src={`${CHAMPION_IMAGE}/${this.state.champion.image.full}`} alt={`${this.state.champion.name}`} />
-                    <button type="button" onClick={(e) => this.onMatchView(e)}>View Match</button>
+                    <button type="button" onClick={this.props.onMatchView(this.props.match.gameId)}>View Match</button>
                 </li>
             );
 

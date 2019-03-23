@@ -3,6 +3,6 @@ export var API_URL =  ( window.location.hostname === "localhost" || window.locat
 : "https://league-stats-backend.herokuapp.com/";
 
 
- var CHAPION_IMAGE = "http://ddragon.leagueoflegends.com/cdn/6.24.1/img/champion";
+ var CHAPION_IMAGE = "http://ddragon.leagueoflegends.com/cdn/9.6.1/img/champion";
 
  export default CHAPION_IMAGE;
