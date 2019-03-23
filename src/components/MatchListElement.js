@@ -5,14 +5,23 @@ import { champions } from "./champions";
 
 
 class MatchListElement extends Component {
+   
     constructor(props) {
         super(props);
 
-        var x = _.find(champions.data, (champ) => champ.key === `${props.match.champion}`);
+        var x = _.find(champions.data, (champ) => champ.key === `${this.props.match.champion}`);
+
+        console.log(x);
+
+        console.log(x.name);
 
         this.state = {
             champion: [x]
-        };
+        };      
+
+        console.log(`${JSON.stringify(this.state.champion[0])}`)
+
+        console.log(`${this.state.champion.name}`)
     }
 
     onMatchView(e) {
